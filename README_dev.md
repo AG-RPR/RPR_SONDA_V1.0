@@ -1,5 +1,5 @@
 # REPERIO SONDA V1.0 - Technical Documentation
-Reperio B.V. 
+Reperio B.V. provides time-efficient, patient-friendly diagnostic solutions for neurological and ophthalmological impairments. The proprietary technology is a combination of high-speed oculography and Deep Learning that allows achieving extremely fast quantifications of visual functions. It has applications in, amongst others, Glaucoma, different forms of Retinopathies, Parkinson's Disease, Multiple Sclerosis and Acquired Brain Injury.
 ## Content:
 - Introduction
 - System requirements
@@ -33,4 +33,4 @@ Run the sonda_install.m file. This script will automatically:
 ## Data acquisition
 acquire\_gaze\_data.m 
 
-
+ 
