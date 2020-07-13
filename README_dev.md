@@ -1,5 +1,5 @@
 # REPERIO SONDA V1.0 - Technical Documentation
-Reperio B.V. provides time-efficient, patient-friendly diagnostic solutions for neurological and ophthalmological impairments. The proprietary technology is a combination of high-speed oculography and Deep Learning that allows achieving extremely fast quantifications of visual functions. It has applications in, amongst others, Glaucoma, different forms of Retinopathies, Parkinson's Disease, Multiple Sclerosis and Acquired Brain Injury.
+Reperio B.V. (www.reperio-medtech.com) provides time-efficient, patient-friendly diagnostic solutions for neurological and ophthalmological impairments. The proprietary technology is a combination of high-speed oculography and Deep Learning that allows achieving extremely fast quantifications of visual functions. It has applications in, amongst others, Glaucoma, different forms of Retinopathies, Parkinson's Disease, Multiple Sclerosis and Acquired Brain Injury.
 ## Content:
 - Introduction
 - System requirements
@@ -13,11 +13,12 @@ This document contains the *technical* documentation of the REPERIO SONDA V1.0 M
 
 ## System requirements 
 ### Eye-tracker models
-SONDA can be interfaced with desktop-mounted eye-trackers from two manufacturer: SR-Research (Ottawa, Ontario, Canada) and Tobii (Stockholm, Sweden). The validation has been performed on EyeLink 1000 (SR-Research), EyeLink Portable Duo (SR-Research) and Tobii T60XL (Tobii).
+SONDA can be interfaced with desktop-mounted eye-trackers from two manufacturer: SR-Research (Ottawa, Ontario, Canada) and Tobii (Stockholm, Sweden). The validation has been performed on EyeLink 1000 (SR-Research), EyeLink Portable Duo (SR-Research) and Tobii T60XL (Tobii). 
+The version in this repository can be interfaced exclusively with SR-Research eyetrackers.
 
 ### Operative System
 MacOS (latest stable version tested on MacOS 10.12 Sierra) is the preferred OS for SR-Research eye-trackers. 
-Windows (7 or later) 64bit is the preferred OS for Tobii eye-trackers. 
+Windows (7 or later) 64bit is the preferred OS for Tobii eye-trackers. (version not present in this repo)
 
 ### Display
 It is recommended to use displays that can run at a stable refresh rate of 120 Hz or above, with a minimum resolution of 1920x1080.
@@ -31,6 +32,10 @@ Run the sonda_install.m file. This script will automatically:
    - create a init_config.log file for future reference
    
 ## Data acquisition
-acquire\_gaze\_data.m 
+- acquire\_gaze\_data.m 
+
+- rnd\_list.m: create a .txt file containing the list of conditions of the gaze acquisition session
+
+- rnd\_fixpath.m: pre-compute the smooth trajectories of the stimulus at different velocity levels, linearly scaled with each other. It is a rather inefficent way to generate random walks that respect the boundaries of the screen, but it's 100% guaranteed that the resulting trajectories do NOT contain any periodic auto-correlations (which are detrimental for the cross-correlogram analysis).
 
  

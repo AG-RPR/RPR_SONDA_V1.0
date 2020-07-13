@@ -1,5 +1,7 @@
 % function list  = rnd_list(subj, myPath, [pat], [lum], [vel], [vfd])
-%
+% 
+% subj: string containing subject ID
+% myPath: string containing the path where the list is created
 % Creates a list with all the possible (unique) combinations of conditions. 
 % Default conditions are:
 %
