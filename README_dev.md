@@ -24,18 +24,18 @@ Windows (7 or later) 64bit is the preferred OS for Tobii eye-trackers. (version 
 It is recommended to use displays that can run at a stable refresh rate of 120 Hz or above, with a minimum resolution of 1920x1080.
 
 ## Installation
-Run the sonda_install.m file. This script will automatically: 
-
-   - install Psychtoolbox, necessary for displaying the visual stimuli and ensure proper time-sync between the display and the eye-tracker.
-   - create and store the stimulus trajectory paths, for smooth and saccadic pursuit modalities
-   - determine which operative system is running
-   - create a init_config.log file for future reference
+- Install PsychToolBox-3 following the instructions at http://psychtoolbox.org/download.html;
+- launch acquire\_gaze\_data.m for the first time and it will prompt a request to generate the trajectory of the stimulus for _smooth-_ and _saccadic-pursuit_ modalities. 
+- The trajectories are generated in a subfolder "stim_trajectories" of your current working folder. If the subfolder doesn't exist, it will be created automatically
+- continue with data acquisition normally or quit. When launching acquire\_gaze\_data.m again from the same folder, it will pre-load the trajectories previously generated. 
    
 ## Data acquisition
-- acquire\_gaze\_data.m 
+- acquire\_gaze\_data.m: main function for data acquisition (and installation)
 
 - rnd\_list.m: create a .txt file containing the list of conditions of the gaze acquisition session
 
-- rnd\_fixpath.m: pre-compute the smooth trajectories of the stimulus at different velocity levels, linearly scaled with each other. It is a rather inefficent way to generate random walks that respect the boundaries of the screen, but it's 100% guaranteed that the resulting trajectories do NOT contain any periodic auto-correlations (which are detrimental for the cross-correlogram analysis).
+- rnd\_fixpath.m: pre-compute the _smooth-pursuit_ trajectories of the stimulus at different velocity levels, linearly scaled with each other. It is a rather inefficent way to generate random walks that respect the boundaries of the screen, but it's 100% guaranteed that the resulting trajectories do NOT contain any periodic auto-correlations (which are detrimental for the cross-correlogram analysis).
+
+- make\_saccadic\_path.m: juxtapose epochs of 2 seconds each from the _smooth-pursuit_ trajectories to create the _saccadic-pursuit_ trajectories
 
  
