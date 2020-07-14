@@ -38,4 +38,9 @@ It is recommended to use displays that can run at a stable refresh rate of 120 H
 
 - make\_saccadic\_path.m: juxtapose epochs of 2 seconds each from the _smooth-pursuit_ trajectories to create the _saccadic-pursuit_ trajectories
 
+## Data analysis
+WIP
+
+## Misc
+WIP
  

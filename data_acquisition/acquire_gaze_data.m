@@ -231,7 +231,7 @@ for ii = 1:size(list,1) % for each item on the list of conditions (the one creat
             texHemi=Screen('MakeTexture', w, maskHemi); % create a PTB texture
             rectHemi = [0 0 xScreen*2 yScreen]; % resize the hemifield defect to fit the screen, doubled x dimension to be ensure that the defect is always present even if the gaze falls outside the screen
     end
-    %% session start (6 trials) (STOPPED HERE) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    %% session start (6 trials)
     for k = 1:nTrial
         switch pat
             case 0 % smooth
