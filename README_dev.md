@@ -9,7 +9,7 @@ Reperio B.V. (www.reperio-medtech.com) provides time-efficient, patient-friendly
 - Misc
 
 ## Introduction
-This document contains the *technical* documentation of the REPERIO SONDA V1.0 MATLAB toolbox. This toolbox allows to collect gaze data with video eye-tracking using the SONDA continuous tracking task, and then provides several oculomotor metrics (Grillini et. al 2018, Grillini et al. 2020). This document is intended for researchers and developers who wants to use (and potentially expand) this toolbox for research and non-profit purposes only. Regular users can refer to the User Manual. 
+This document contains the *technical* documentation of the REPERIO SONDA V1.0 MATLAB toolbox. This toolbox allows to collect gaze data with video eye-tracking using the SONDA continuous tracking task, and then provides several oculomotor metrics (Grillini et. al 2018, Grillini et al. 2020). This document is intended for researchers and developers who wants to use (and potentially expand) this toolbox for research and non-profit purposes only. 
 
 ## System requirements 
 ### Eye-tracker models
