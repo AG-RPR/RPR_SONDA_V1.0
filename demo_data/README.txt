@@ -1,0 +1,1 @@
+The data in this folder represent a typical SONDA session: 6 trials of smooth pursuit and 6 trials of saccadic pursuit. The name format is standardized, an explanation on how to interpret it can be found in analyze_gaze_data_singlesub.m
